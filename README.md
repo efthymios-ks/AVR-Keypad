@@ -6,7 +6,7 @@
 A library to control matrix keypads using AVR microcontrollers.  
 + **The keypad pins can be configured to any pin in any port in any sequence.**  
 + Supports 3x3, 3x4 and 4x4 keypads.  
-+ Can perform immediate readings, which are noise-susceptible or debounced readings using a timer interrupt
++ Can perform immediate readings, which are noise-susceptible, or debounced readings using a timer interrupt.
 + Functions include:  
   + Read 
   + Wait till key pressed  
