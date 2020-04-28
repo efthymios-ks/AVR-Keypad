@@ -17,7 +17,7 @@ int main(void)
 	sei();
 		
 	//Loop
-	while (1 == 1)
+	while (1)
 	{
 		//Read key value from ISR sequence
 		key = KP_GetKeyISR();
@@ -42,10 +42,10 @@ void Timer0_Setup(void)
 {
 	OCR0 = 124;
 	TCNT0 = 0;
-	bitSet(TCCR0, WGM01);
-	bitSet(TCCR0, CS01);
-	bitSet(TCCR0, CS00);
-	bitSet(TIMSK, OCIE0);	
+	BitSet(TCCR0, WGM01);
+	BitSet(TCCR0, CS01);
+	BitSet(TCCR0, CS00);
+	BitSet(TIMSK, OCIE0);	
 }
 
 //Timer0 interrupt service routine
